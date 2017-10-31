@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src='./location/node_modules/react/dist/react.js'></script>
+        <script src='./location/node_modules/react-dom/dist/react-dom.js'></script>
+        <script src='./location/dist/location.js'></script>
+        <script src='./storeavailability/dist/storeavailability.js'></script>
+    </head>
+    <body>
+        <div id='location'></div>
+        <!-- default is not necessary with latest webpack -->
+        <script>ReactDOM.render(React.createElement(Location.Locator.default(), null, null), document.getElementById('location'));</script>
+
+        <div id='storeavailability'></div>
+        <!-- default is not necessary with latest webpack -->
+        <script>ReactDOM.render(React.createElement(StoreAvailability.Availability.default, null, null), document.getElementById('storeavailability'));</script>
+    </body>
+</html>
